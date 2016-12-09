@@ -1,0 +1,188 @@
+body, html
+{
+  height: 100%;
+  background-color: #4286f4;
+  color: white;
+  font-family: 'Robotico', sans-serif;
+}
+
+#wrapper
+{
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#navbar
+{
+  position: fixed;
+  right: 0;
+  padding: 5px;
+  z-index: 5;
+  width: 100%;
+  text-align: right;
+  transition: 0.5s;
+}
+
+.navbarAlt
+{
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbarAlt .button
+{
+  color: #4286f4;
+}
+
+a:hover
+{
+  color: #4286f4;
+}
+
+.buttonHover
+{
+  color: #4286f4;
+}
+
+.buttonHoverAlt
+{
+  color: white;
+}
+
+#navbar .button
+{
+  border: 0px;
+  border-radius: 0px;
+  transition: 0.5s;
+  z-index: 5;
+  margin: 5px; /*change to rem or w/e*/
+  font-size: 12px;
+  position: relative;
+  transition: 0.5s;
+}
+
+#navbar .button:after
+{
+  content: "";
+  background-color: white;
+  position: absolute;
+  bottom : 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: 0.5s;
+  transform-origin: bottom center;
+  z-index: -1;
+}
+
+#navbar .button:hover:after
+{
+  height: 100%;
+}
+
+#landingContainer
+{
+  height: 100vh;
+  text-align: center;
+}
+
+#landingContainer:before
+{
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#landingWrap
+{
+  max-height: 90%;
+  max-width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1,h2,h3,h4
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1
+{
+  font-size: 6rem;
+}
+
+#portfolioWrapper
+{
+  background-color: white;
+  color: darkgray;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#portfolioContent
+{
+
+  width: 100%; /*PROBLEM*/
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#portfolioTitle
+{
+  text-align: center;
+}
+
+.portfolioRow
+{
+  width:100%;
+  margin: 0 auto;
+}
+
+.project
+{
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.projectImageContainer
+{
+  margin: 1%;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: inline-block;
+}
+
+.projectImage
+{
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+
+}
+
+.contactRow
+{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contactWrapper
+{
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#contactTitle
+{
+  text-align: center;
+}
