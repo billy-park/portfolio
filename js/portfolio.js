@@ -10,7 +10,6 @@ $(document).ready(function() {
     $(this).removeClass("buttonHover");
   })
   /*possible to edit css of classes instead of having different classes?*/
-  /*change to addclass for anim*/
   $(window).scroll(function() {
     if($('#navbar').offset().top > portfolioLine ) {
       $('#navbar').addClass("navbarAlt");
