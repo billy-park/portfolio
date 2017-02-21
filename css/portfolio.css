@@ -24,6 +24,11 @@ body, html
   transition: 0.5s;
 }
 
+.navbarDefault
+{
+  background-color: rgba(66,134,244, 0.95);
+}
+
 .navbarAlt
 {
   background-color: rgba(255, 255, 255, 0.95);
@@ -112,6 +117,11 @@ h1
   font-size: 6rem;
 }
 
+#aboutWrapper
+{
+  text-align: center;
+}
+
 #portfolioWrapper
 {
   background-color: white;
@@ -133,6 +143,7 @@ h1
 #portfolioTitle
 {
   text-align: center;
+  color: #4286f4;
 }
 
 .portfolioRow
@@ -165,7 +176,34 @@ h1
   height: 100%;
   max-width: 300px;
   max-height: 300px;
+}
 
+.projectImageOverlay
+{
+ position: absolute;
+ padding: 5px;
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ box-sizing:border-box;
+ bottom: 0px;
+ width: 100%;
+ background-color: rgba(66,134,244, 0.95);
+}
+
+.projectImageOverlay img
+{
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.projectImageTitle
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 18px;
+  color: white;
 }
 
 .contactRow
@@ -178,6 +216,7 @@ h1
 #contactWrapper
 {
   margin: 0 auto;
+  max-width: 50%;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -185,4 +224,16 @@ h1
 #contactTitle
 {
   text-align: center;
+}
+
+.form
+{
+  height: 100px;
+  color: black;
+  font-size: 18px;
+}
+
+#contactMessage
+{
+  height: 100px;
 }

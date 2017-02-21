@@ -2,6 +2,14 @@ $(document).ready(function() {
 
   portfolioLine = $('#portfolioWrapper').offset().top;
 
+  if($('#navbar').offset().top < portfolioLine ) {
+    $('#navbar').addClass("navbarDefault");
+    $('#navbar').removeClass("navbarAlt");
+  } else {
+    $('#navbar').addClass("navbarAlt");
+    $('#navbar').removeClass("navbarDefault");
+  }
+
   $('#navbar > .button').hover(function(){
     $(this).addClass("buttonHover");
   })
@@ -13,8 +21,10 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if($('#navbar').offset().top > portfolioLine ) {
       $('#navbar').addClass("navbarAlt");
+      $('#navbar').removeClass("navbarDefault");
     } else {
       $('#navbar').removeClass("navbarAlt");
+      $('#navbar').addClass("navbarDefault");
     }
   })
 
