@@ -211,6 +211,16 @@ h1
 
 }
 
+.projectLink
+{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
 .projectImage
 {
   width: 100%;
@@ -238,6 +248,7 @@ h1
   height: 32px;
   width: 32px;
   padding-top: 5px;
+  z-index: 2;
 }
 
 .projectImageTitle
