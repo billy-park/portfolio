@@ -1,0 +1,295 @@
+body, html
+{
+  height: 100%;
+  background-color: #4286f4;
+  color: white;
+  font-family: 'Robotico', sans-serif;
+}
+
+#wrapper
+{
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#navbar
+{
+  padding: 5px;
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  vertical-align: middle;
+}
+
+.navFixed
+{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.navbarDefault
+{
+  background-color: rgba(66,134,244, 1); /*0.95 alpha if preferable*/
+}
+
+.navbarAlt
+{
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbarAlt .button
+{
+  color: #4286f4;
+}
+
+a:hover
+{
+  color: #4286f4;
+}
+
+.buttonHover
+{
+  color: #4286f4;
+}
+
+.buttonHoverAlt
+{
+  color: white;
+}
+
+#navbar .button
+{
+  border: 2px solid white;
+  border-radius: 0px;
+  transition: 0.5s;
+  z-index: 5;
+  margin: 5px; /*change to rem or w/e*/
+  /*margin-top: 20px;*/
+  font-size: 12px;
+  position: relative;
+  transition: 0.5s;
+  width: 140px;
+}
+
+#navbar .button:after
+{
+  content: "";
+  background-color: white;
+  position: absolute;
+  bottom : 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: 0.5s;
+  transform-origin: bottom center;
+  z-index: -1;
+}
+
+#navbar .button:hover:after
+{
+  height: 100%;
+}
+
+#landingContainer
+{
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  left: -2px;
+}
+
+#landingContainer:before
+{
+  content: ' '; /*this is the problem*/
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  z-index: -2;
+}
+
+#landingWrap
+{
+  max-height: 90%;
+  max-width: 90%;
+  width: 100%;
+  min-height: 216px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1,h2,h3,h4
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1
+{
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+#aboutWrapper
+{
+  background-color: white;
+  color: #4286f4;
+  font-size: 20px; /*scaling rem or w/e*/
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+  text-align: center;
+}
+
+#aboutWrapper .row
+{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#aboutContainer
+{
+  height: 100%;
+}
+
+#aboutImage
+{
+}
+
+#portfolioWrapper
+{
+  background-color: #4286f4;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#portfolioContent
+{
+  width: 100%; /*PROBLEM*/
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+#portfolioTitle
+{
+  text-align: center;
+  color: white;
+}
+
+.portfolioRow
+{
+  width:100%;
+  margin: 0 auto;
+}
+
+.project
+{
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.projectImageContainer
+{
+  margin: 1%;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  border: 2px white solid;
+
+}
+
+.projectImage
+{
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.projectImageOverlay
+{
+ position: absolute;
+ padding: 5px;
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ box-sizing:border-box;
+ bottom: 0px;
+ width: 100%;
+ background-color: rgba(66,134,244, 0.9); /* 0.9 alpha */
+ overflow: hidden;
+}
+
+.projectImageOverlay img
+{
+  position: relative;
+  height: 32px;
+  width: 32px;
+  padding-top: 5px;
+}
+
+.projectImageTitle
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 20px;
+  color: white;
+}
+
+.projectImageDesc
+{
+  margin-bottom: 0px;
+  font-size: 12px;
+  color: white;
+}
+
+.contactRow
+{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contactWrapper
+{
+  color: #4286f4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: white;
+}
+
+#contactContent
+{
+    max-width: 50%;
+      margin: 0 auto;
+}
+
+#contactTitle
+{
+  text-align: center;
+}
+
+.form
+{
+  height: 100px;
+  color: black;
+  font-size: 18px;
+}
+
+#contactMessage
+{
+  height: 100px;
+}
