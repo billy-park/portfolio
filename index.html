@@ -22,10 +22,10 @@
           <h3>Graduate Web Developer</h3>
         </div>
         <div id="navbar">
-          <a class="button top" href="#">Home</a>
-          <a class="button top" href="#">About</a>
-          <a class="button top" href="#">Portfolio</a>
-          <a class="button top" href="#">Contact</a>
+          <a class="button top" href="#wrapper">Home</a>
+          <a class="button top" href="#aboutWrapper">About</a>
+          <a class="button top" href="#portfolioWrapper">Portfolio</a>
+          <a class="button top" href="#contactWrapper">Contact</a>
         </div>
       </div>
     </div>
@@ -47,10 +47,10 @@
   <div id="portfolioWrapper">
     <h2 id="portfolioTitle">Portfolio</h2>
     <div id="portfolioContent">
-      <!-- make overlay only appear on mouseover? -->
       <div class="projectImageContainer">
+        <img class="projectImage" src="images/smbf.jpg"></img>
         <a href="https://billy-park.github.io/SMBF/">
-          <img class="projectImage" src="images/smbf.jpg"></img>
+          <span class="projectLink"></span>
         </a>
         <div class="projectImageOverlay">
           <h4 class="projectImageTitle">Super Miner Battle Farm</h4>
@@ -61,7 +61,10 @@
         </div>
       </div>
       <div class="projectImageContainer">
-        <img class="projectImage" src="http://socialmediaseo.net/wp-content/uploads/2010/05/500px-android-logosvg-300x300.png"></img>
+        <img class="projectImage" src="images/placeholder.png"></img>
+        <a href="https://github.com/billy-park">
+          <span class="projectLink"></span>
+        </a>
         <div class="projectImageOverlay">
           <h4 class="projectImageTitle">Court Construction</h4>
           <p class="projectImageDesc">Court Construction description</p>
@@ -69,7 +72,10 @@
         </div>
       </div>
       <div class="projectImageContainer">
-        <img class="projectImage" src="http://socialmediaseo.net/wp-content/uploads/2010/05/500px-android-logosvg-300x300.png"></img>
+        <img class="projectImage" src="images/placeholder.png"></img>
+        <a href="https://github.com/billy-park">
+          <span class="projectLink"></span>
+        </a>
         <div class="projectImageOverlay">
           <h4 class="projectImageTitle">Project 3</h4>
           <p class="projectImageDesc">Project 3 description</p>
@@ -77,7 +83,10 @@
         </div>
       </div>
       <div class="projectImageContainer">
-        <img class="projectImage" src="http://socialmediaseo.net/wp-content/uploads/2010/05/500px-android-logosvg-300x300.png"></img>
+        <img class="projectImage" src="images/placeholder.png"></img>
+        <a href="https://github.com/billy-park">
+          <span class="projectLink"></span>
+        </a>
         <div class="projectImageOverlay">
           <h4 class="projectImageTitle">Project 4</h4>
           <p class="projectImageDesc">Project 4 description</p>
@@ -85,7 +94,10 @@
         </div>
       </div>
       <div class="projectImageContainer">
-        <img class="projectImage" src="http://socialmediaseo.net/wp-content/uploads/2010/05/500px-android-logosvg-300x300.png"></img>
+        <img class="projectImage" src="images/placeholder.png"></img>
+        <a href="https://github.com/billy-park">
+          <span class="projectLink"></span>
+        </a>
         <div class="projectImageOverlay">
           <h4 class="projectImageTitle">Project 5</h4>
           <p class="projectImageDesc">Project 5 description</p>
@@ -93,7 +105,10 @@
         </div>
       </div>
       <div class="projectImageContainer">
-      <img class="projectImage" src="http://socialmediaseo.net/wp-content/uploads/2010/05/500px-android-logosvg-300x300.png"></img>
+      <img class="projectImage" src="images/placeholder.png"></img>
+        <a href="https://github.com/billy-park">
+          <span class="projectLink"></span>
+        </a>
       <div class="projectImageOverlay">
           <h4 class="projectImageTitle">Project 6</h4>
           <p class="projectImageDesc">project 6 description</p>
@@ -105,22 +120,43 @@
   <div id="contactWrapper">
     <div id="contactContent">
       <h2 id="contactTitle">Contact Me</h2>
-      <div class="row contactRow">
-        <div class="twelve columns">
-          <label for="nameInput">Name</label>
-          <input class="u-full-width form" type="text" placeholder="your name" id="nameInput">
+      <div class="row lineStyled">
+        <div class="four columns">
+          <h5 class="contactSubHead">Call Me</h5>
+          <p class="contactText">01010101001</p>
+        </div>
+        <div class="four columns">
+          <h5 class="contactSubHead">Message Me</h5>
+          <p class=contactText>Fill in the form below</p>
+        </div>
+        <div class="four columns">
+          <h5 class="contactSubHead">Email Me</h5>
+          <p class="contactText">example@gmail.com</p>
         </div>
       </div>
-      <div class="row contactRow">
-        <div class="twelve columns">
-          <label for="emailInput">Email</label>
-          <input class="u-full-width form" type="email" placeholder="youremail@gmail.com" id="emailInput">
+      <div class="row">
+        <div class="four columns">
+          <label for="nameInput">Your Name (required): </label>
+          <input class="u-full-width form" type="text" placeholder="Billy Park" id="nameInput">
+        </div>
+        <div class="four columns">
+          <label for="emailInput">Email Address (required): </label>
+          <input class="u-full-width form" type="email" placeholder="e.g. youremail@gmail.com" id="emailInput">
+        </div>
+        <div class="four columns">
+          <label for="numberInput">Phone Number: </label>
+          <input id="contactNumber" class="u-full-width form" type="text" placeholder="e.g. 010101001" id="numberInput">
         </div>
       </div>
-      <div class="row contactRow">
+      <div class="row">
         <div class="twelve columns">
-          <label for="messageInput">Message</label>
-          <input id="contactMessage" class="u-full-width form" type="text" placeholder="your message" id="messageInput">
+          <label for="detailsInput">Details (required): </label>
+          <textarea id="contactDetails" class="u-full-width form" placeholder="Tell me about your project"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+           <input class="button-primary u-full-width" type="submit" value="send message">
         </div>
       </div>
     </div>
