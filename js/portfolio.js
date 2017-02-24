@@ -41,6 +41,12 @@ $(document).ready(function() {
         }, 1000, 'swing');
     }
   });
+
+  //prevent submit button from staying in focus
+  $(".submitBtn").mouseup(function(){
+    $(this).blur();
+  })
+
   //expand/shrink project information div
   /* removed because of potential issues with mobile devices
   $('.projectImageContainer').hover(function(){
