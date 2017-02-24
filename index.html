@@ -120,22 +120,43 @@
   <div id="contactWrapper">
     <div id="contactContent">
       <h2 id="contactTitle">Contact Me</h2>
-      <div class="row contactRow">
-        <div class="twelve columns">
-          <label for="nameInput">Name</label>
-          <input class="u-full-width form" type="text" placeholder="your name" id="nameInput">
+      <div class="row lineStyled">
+        <div class="four columns">
+          <h5 class="contactSubHead">Call Me</h5>
+          <p class="contactText">01010101001</p>
+        </div>
+        <div class="four columns">
+          <h5 class="contactSubHead">Message Me</h5>
+          <p class=contactText>Fill in the form below</p>
+        </div>
+        <div class="four columns">
+          <h5 class="contactSubHead">Email Me</h5>
+          <p class="contactText">example@gmail.com</p>
         </div>
       </div>
-      <div class="row contactRow">
-        <div class="twelve columns">
-          <label for="emailInput">Email</label>
-          <input class="u-full-width form" type="email" placeholder="youremail@gmail.com" id="emailInput">
+      <div class="row">
+        <div class="four columns">
+          <label for="nameInput">Your Name (required): </label>
+          <input class="u-full-width form" type="text" placeholder="Billy Park" id="nameInput">
+        </div>
+        <div class="four columns">
+          <label for="emailInput">Email Address (required): </label>
+          <input class="u-full-width form" type="email" placeholder="e.g. youremail@gmail.com" id="emailInput">
+        </div>
+        <div class="four columns">
+          <label for="numberInput">Phone Number: </label>
+          <input id="contactNumber" class="u-full-width form" type="text" placeholder="e.g. 010101001" id="numberInput">
         </div>
       </div>
-      <div class="row contactRow">
+      <div class="row">
         <div class="twelve columns">
-          <label for="messageInput">Message</label>
-          <input id="contactMessage" class="u-full-width form" type="text" placeholder="your message" id="messageInput">
+          <label for="detailsInput">Details (required): </label>
+          <textarea id="contactDetails" class="u-full-width form" placeholder="Tell me about your project"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+           <input class="button-primary u-full-width" type="submit" value="send message">
         </div>
       </div>
     </div>
