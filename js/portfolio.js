@@ -46,6 +46,9 @@ $(document).ready(function() {
   $(".submitBtn").mouseup(function(){
     $(this).blur();
   })
+  $(".button").mouseup(function(){
+    $(this).blur();
+  })
 
   //expand/shrink project information div
   /* removed because of potential issues with mobile devices
