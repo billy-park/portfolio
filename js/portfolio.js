@@ -1,10 +1,12 @@
 $(document).ready(function() {
 
+  //Add so that the correct navbutton is highlighted when in that section
+
   //portfolioLine = $('#portfolioWrapper').offset().top;
   //this is iffy because of the fact that the offset will change once the navbar moves
-  navbarLine = $('#navbar').offset().top;
+  navbarLine = $('#landing').offset().top + 158;
   $(window).resize(function(){
-    navbarLine = $('#navbar').offset().top;
+    navbarLine = $('#landing').offset().top + 158;
     console.log('resize!');
     console.log(navbarLine);
   });
@@ -46,9 +48,8 @@ $(document).ready(function() {
   $(".submitBtn").mouseup(function(){
     $(this).blur();
   })
-  $(".button").mouseup(function(){
-    $(this).blur();
-  })
+
+  //focus navbar button for current section
 
   //expand/shrink project information div
   /* removed because of potential issues with mobile devices

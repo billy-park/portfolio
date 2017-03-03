@@ -162,7 +162,6 @@ h1
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 #aboutContainer p
@@ -172,6 +171,11 @@ h1
 
 #aboutImage
 {
+}
+
+#aboutTitle
+{
+  /*margin-bottom: 0px;*/
 }
 
 #portfolioWrapper
@@ -347,6 +351,23 @@ textarea {
     resize: none;
 }
 
+.otherLinks
+{
+  margin-top: 40px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.otherLinks img
+{
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-rightL: 20px;
+}
+
 ::-webkit-input-placeholder
 { /* Chrome */
   color: lightgray;
@@ -365,3 +386,12 @@ textarea {
   color: lightgray;
   opacity: 1;
 }
+
+/*.titleHR
+{
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 20%;
+  border: 1px #4286f4 solid;
+}
+*/
