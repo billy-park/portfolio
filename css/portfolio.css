@@ -15,18 +15,26 @@ body, html
 
 #navbar
 {
-  position: fixed;
-  right: 0;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   z-index: 5;
   width: 100%;
-  text-align: right;
+  text-align: center;
   transition: 0.5s;
+  vertical-align: middle;
+}
+
+.navFixed
+{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .navbarDefault
 {
-  background-color: rgba(66,134,244, 0.95);
+  background-color: rgba(66,134,244, 1); /*0.95 alpha if preferable*/
 }
 
 .navbarAlt
@@ -56,14 +64,19 @@ a:hover
 
 #navbar .button
 {
-  border: 0px;
+  border: 2px solid white;
   border-radius: 0px;
   transition: 0.5s;
   z-index: 5;
   margin: 5px; /*change to rem or w/e*/
+  /*margin-top: 20px;*/
   font-size: 12px;
   position: relative;
   transition: 0.5s;
+  /*width: 140px;*/
+  width: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #navbar .button:after
@@ -89,20 +102,25 @@ a:hover
 {
   height: 100vh;
   text-align: center;
+  width: 100%;
+  left: -2px;
 }
 
 #landingContainer:before
 {
-  content: ' ';
+  content: ' '; /*this is the problem*/
   display: inline-block;
   vertical-align: middle;
   height: 100%;
+  z-index: -2;
 }
 
 #landingWrap
 {
   max-height: 90%;
   max-width: 90%;
+  width: 100%;
+  min-height: 216px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -115,35 +133,74 @@ h1,h2,h3,h4
 h1
 {
   font-size: 6rem;
+  font-weight: bold;
 }
 
 #aboutWrapper
 {
+  background-color: white;
+  color: #4286f4;
+  font-size: 20px; /*scaling rem or w/e*/
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
   text-align: center;
+
+}
+
+#aboutWrapper .row
+{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#aboutContainer
+{
+  height: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutContainer p
+{
+  text-align: left;
+}
+
+#aboutImage
+{
+}
+
+#aboutTitle
+{
+  /*margin-bottom: 0px;*/
 }
 
 #portfolioWrapper
 {
-  background-color: white;
-  color: darkgray;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  background-color: #4286f4;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 #portfolioContent
 {
-
   width: 100%; /*PROBLEM*/
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
 }
 
 #portfolioTitle
 {
   text-align: center;
-  color: #4286f4;
+  color: white;
 }
 
 .portfolioRow
@@ -168,6 +225,17 @@ h1
   width: 300px;
   position: relative;
   display: inline-block;
+  border: 2px white solid;
+}
+
+.projectLink
+{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
 }
 
 .projectImage
@@ -187,7 +255,7 @@ h1
  box-sizing:border-box;
  bottom: 0px;
  width: 100%;
- background-color: rgba(66,134,244, 0.95);
+ background-color: rgba(66,134,244, 0.9); /* 0.9 alpha */
  overflow: hidden;
 }
 
@@ -197,6 +265,7 @@ h1
   height: 32px;
   width: 32px;
   padding-top: 5px;
+  z-index: 2;
 }
 
 .projectImageTitle
@@ -204,23 +273,38 @@ h1
   margin-top: 5px;
   margin-bottom: 5px;
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 
-.contactRow
+.projectImageDesc
 {
-  width: 50%;
+  margin-bottom: 0px;
+  font-size: 12px;
+  color: white;
+}
+
+/*.contactRow
+{
+  max-width: 50%;
   margin: 0 auto;
   text-align: center;
 }
-
+*/
 #contactWrapper
 {
+  color: #4286f4;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: white;
+}
+
+#contactContent
+{
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 900px;
   margin: 0 auto;
-  max-width: 50%;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 
 #contactTitle
@@ -230,12 +314,85 @@ h1
 
 .form
 {
-  height: 100px;
-  color: black;
+  color: white;
   font-size: 18px;
 }
 
-#contactMessage
+#contactNumber
 {
-  height: 100px;
 }
+
+.contactSubHead
+{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.contactText
+{
+  text-align: center;
+}
+
+.lineStyled
+{
+  border-top: 1px #4286f4 solid;
+  border-bottom: 1px #4286f4 solid;
+  padding-top: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#contactDetails
+{
+  height: 300px;
+}
+
+textarea {
+    resize: none;
+}
+
+.otherLinks
+{
+  margin-top: 40px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.otherLinks img
+{
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-rightL: 20px;
+}
+
+::-webkit-input-placeholder
+{ /* Chrome */
+  color: lightgray;
+}
+:-ms-input-placeholder
+{ /* IE 10+ */
+  color: lightgray;
+}
+::-moz-placeholder
+{ /* Firefox 19+ */
+  color: lightgray;
+  opacity: 1;
+}
+:-moz-placeholder
+{ /* Firefox 4 - 18 */
+  color: lightgray;
+  opacity: 1;
+}
+
+/*.titleHR
+{
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 20%;
+  border: 1px #4286f4 solid;
+}
+*/
