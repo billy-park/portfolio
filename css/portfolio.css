@@ -141,8 +141,8 @@ h1
   background-color: white;
   color: #4286f4;
   font-size: 20px; /*scaling rem or w/e*/
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   width: 100%;
   text-align: center;
 
@@ -163,6 +163,12 @@ h1
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+#aboutContainer .row
+{
+   padding: 2%;
 }
 
 #aboutContainer p
@@ -170,21 +176,20 @@ h1
   text-align: left;
 }
 
-#aboutImage
-{
-}
-
 #aboutTitle
 {
-  /*margin-bottom: 0px;*/
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #portfolioWrapper
 {
   background-color: #4286f4;
   color: white;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 #portfolioContent
@@ -201,6 +206,8 @@ h1
 {
   text-align: center;
   color: white;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .portfolioRow
@@ -294,8 +301,8 @@ h1
 #contactWrapper
 {
   color: #4286f4;
-  padding-top: 3%;
-  padding-bottom: 2%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   background-color: white;
 }
 
@@ -388,11 +395,32 @@ textarea {
   opacity: 1;
 }
 
-/*.titleHR
+.titleHR
 {
   margin-top: 5px;
   margin-bottom: 30px;
-  width: 20%;
-  border: 1px #4286f4 solid;
+  min-width: 250px;
+  max-width: 250px;
+  border-top: 1px #4286f4 solid;
 }
-*/
+
+.titleHRInv
+{
+  margin-top: 5px;
+  margin-bottom: 30px;
+  min-width: 250px;
+  max-width: 250px;
+  border-top: 1px white solid;
+}
+
+
+@media only screen and (max-width:550px) {
+  .aboutImage
+  {
+    display: none;
+  }
+  #aboutContainer p
+  {
+    text-align: center;
+  }
+}
