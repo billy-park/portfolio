@@ -190,12 +190,14 @@ h1
   color: white;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+  margin: 0 auto;
 }
 
 #portfolioContent
 {
   width: 100%; /*PROBLEM*/
   max-width: 1000px;
+  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -210,10 +212,17 @@ h1
   margin-bottom: 0px;
 }
 
-.portfolioRow
+.projectRow
 {
   width:100%;
-  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.rowFirst
+{
+  border-bottom: 2px solid white;
 }
 
 .project
@@ -230,9 +239,23 @@ h1
   margin: 1%;
   height: 300px;
   width: 300px;
+  min-width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 300px;
   position: relative;
   display: inline-block;
   border: 2px white solid;
+  margin-left: 10px !important;
+}
+
+.projectAlt
+{
+  float: right;
+}
+.projectDescAlt
+{
+  margin-left: 10px !important;
 }
 
 .projectLink
@@ -291,6 +314,17 @@ h1
   color: white;
 }
 
+.projectDescription
+{
+  max-width: 600px;
+  text-align: left;
+}
+
+.projectDescription h4
+{
+  text-align: center;
+  padding-bottom: 15px;
+}
 /*.contactRow
 {
   max-width: 50%;
@@ -414,7 +448,7 @@ textarea {
 }
 
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:500px) {
   .aboutImage
   {
     display: none;
@@ -422,5 +456,13 @@ textarea {
   #aboutContainer p
   {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  #buttonContainer
+  {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
