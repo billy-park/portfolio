@@ -14,6 +14,9 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+
+  <!-- Landing Section and Navbar -->
+
   <div id="wrapper">
     <div id="landingContainer" class="container">
       <div id="landingWrap">
@@ -22,108 +25,89 @@
           <h3>Graduate Web Developer</h3>
         </div>
         <div id="navbar">
-          <a class="button top" href="#wrapper">Home</a>
-          <a class="button top" href="#aboutWrapper">About</a>
-          <a class="button top" href="#portfolioWrapper">Portfolio</a>
-          <a class="button top" href="#contactWrapper">Contact</a>
+          <div id="buttonContainer">
+            <a class="button top" href="#wrapper">Home</a>
+            <a class="button top" href="#aboutWrapper">About</a>
+            <a class="button top" href="#portfolioWrapper">Portfolio</a>
+            <a class="button top" href="#contactWrapper">Contact</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- About Section -->
+
   <div id="aboutWrapper">
     <h2 id="aboutTitle">About</h2>
+    <hr class="titleHR">
     <div id="aboutContainer">
       <div class="row">
         <div class="six columns">
-          <img class="aboutImage" src="http://socialmediaseo.net/wp-content/uploads/2010/05/500px-android-logosvg-300x300.png"></img>
+          <img class="aboutImage" src="images/Me.png"></img>
         </div>
         <div class="six columns">
          <p>I'm Billy Park, recent graduate of Computing from UWE</p>
         </div>
       </div>
-
     </div>
   </div>
+
+  <!-- Portfolio Section -->
+
   <div id="portfolioWrapper">
     <h2 id="portfolioTitle">Portfolio</h2>
+    <hr class="titleHRInv">
     <div id="portfolioContent">
-      <div class="projectImageContainer">
-        <img class="projectImage" src="images/smbf.jpg"></img>
-        <a href="https://billy-park.github.io/SMBF/">
-          <span class="projectLink"></span>
-        </a>
-        <div class="projectImageOverlay">
-          <h4 class="projectImageTitle">Super Miner Battle Farm</h4>
-          <p class="projectImageDesc">South west of England fighting game community</p>
-          <a href="https://github.com/billy-park/SMBF">
-            <img src="images/GitHub-Mark-64px.png"></img>
+      <div class="projectRow rowFirst row">
+        <div class="projectImageContainer four columns">
+          <img class="projectImage" src="images/smbf.jpg"></img>
+          <a href="https://billy-park.github.io/SMBF/">
+            <span class="projectLink"></span>
           </a>
+          <div class="projectImageOverlay">
+            <h4 class="projectImageTitle">Super Miner Battle Farm</h4>
+            <p class="projectImageDesc">South west of England fighting game community</p>
+            <a href="https://github.com/billy-park/SMBF">
+              <img src="images/GitHub-Mark-64px.png"></img>
+            </a>
+          </div>
+        </div>
+        <div class="projectDescription eight columns">
+          <h4 class="projectImageTitle">Super Miner Battle Farm</h4>
+          <div class="projectContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
       </div>
-      <div class="projectImageContainer">
-        <img class="projectImage" src="images/placeholder.png"></img>
-        <a href="https://github.com/billy-park">
-          <span class="projectLink"></span>
-        </a>
-        <div class="projectImageOverlay">
-          <h4 class="projectImageTitle">Court Construction</h4>
-          <p class="projectImageDesc">Court Construction description</p>
-          <img src="images/GitHub-Mark-64px.png"></img>
+      <div class="projectRow row">
+        <div class="projectDescription eight columns">
+          <h4 class="projectImageTitle">Project 2</h4>
+          <div class="projectContent projectDescAlt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
-      </div>
-      <div class="projectImageContainer">
-        <img class="projectImage" src="images/placeholder.png"></img>
-        <a href="https://github.com/billy-park">
-          <span class="projectLink"></span>
-        </a>
-        <div class="projectImageOverlay">
-          <h4 class="projectImageTitle">Project 3</h4>
-          <p class="projectImageDesc">Project 3 description</p>
-          <img src="images/GitHub-Mark-64px.png"></img>
-        </div>
-      </div>
-      <div class="projectImageContainer">
-        <img class="projectImage" src="images/placeholder.png"></img>
-        <a href="https://github.com/billy-park">
-          <span class="projectLink"></span>
-        </a>
-        <div class="projectImageOverlay">
-          <h4 class="projectImageTitle">Project 4</h4>
-          <p class="projectImageDesc">Project 4 description</p>
-          <img src="images/GitHub-Mark-64px.png"></img>
-        </div>
-      </div>
-      <div class="projectImageContainer">
-        <img class="projectImage" src="images/placeholder.png"></img>
-        <a href="https://github.com/billy-park">
-          <span class="projectLink"></span>
-        </a>
-        <div class="projectImageOverlay">
-          <h4 class="projectImageTitle">Project 5</h4>
-          <p class="projectImageDesc">Project 5 description</p>
-          <img src="images/GitHub-Mark-64px.png"></img>
-        </div>
-      </div>
-      <div class="projectImageContainer">
-      <img class="projectImage" src="images/placeholder.png"></img>
-        <a href="https://github.com/billy-park">
-          <span class="projectLink"></span>
-        </a>
-      <div class="projectImageOverlay">
-          <h4 class="projectImageTitle">Project 6</h4>
-          <p class="projectImageDesc">project 6 description</p>
-          <img src="images/GitHub-Mark-64px.png"></img>
+        <div class="projectImageContainer four columns projectAlt">
+          <img class="projectImage" src="images/soon.png"></img>
+          <a href="https://github.com/billy-park">
+            <span class="projectLink"></span>
+          </a>
+          <div class="projectImageOverlay">
+            <h4 class="projectImageTitle">Project 2</h4>
+            <p class="projectImageDesc">Project 2 description</p>
+            <img src="images/GitHub-Mark-64px.png"></img>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Contact Section -->
+
   <div id="contactWrapper">
     <div id="contactContent">
       <h2 id="contactTitle">Contact Me</h2>
+      <hr class=titleHR>
       <div class="row lineStyled">
         <div class="four columns">
           <h5 class="contactSubHead">Call Me</h5>
-          <p class="contactText">01010101001</p>
+          <p class="contactText">07443480423</p>
         </div>
         <div class="four columns">
           <h5 class="contactSubHead">Message Me</h5>
@@ -131,7 +115,7 @@
         </div>
         <div class="four columns">
           <h5 class="contactSubHead">Email Me</h5>
-          <p class="contactText">example@gmail.com</p>
+          <p class="contactText">billyparkweb@gmail.com</p>
         </div>
       </div>
       <div class="row">
@@ -145,7 +129,7 @@
         </div>
         <div class="four columns">
           <label for="numberInput">Phone Number: </label>
-          <input id="contactNumber" class="u-full-width form" type="text" placeholder="e.g. 010101001" id="numberInput">
+          <input id="contactNumber" class="u-full-width form" type="tel" placeholder="e.g. 07443480423" id="numberInput">
         </div>
       </div>
       <div class="row">
@@ -156,12 +140,19 @@
       </div>
       <div class="row">
         <div class="twelve columns">
-           <input class="button-primary u-full-width" type="submit" value="send message">
+           <input class="button-primary u-full-width submitBtn" type="submit" value="send message">
         </div>
+      </div>
+      <div class="otherLinks">
+        <a href="http://codepen.io/billy-park/"><img src="images/Button-Black-Large.png"></img></a>
+        <a href="https://twitter.com/billyparkweb"><img src="images/Twitter_Social_Icon_Circle_Color.png"></img></a>
+        <a href="https://github.com/billy-park/"><img src="images/GitHub-Mark-120px-plus.png"></img></a>
       </div>
     </div>
   </div>
-  <!-- Github/etc links here -->
+
+  <!-- Scripts etc -->
+
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
